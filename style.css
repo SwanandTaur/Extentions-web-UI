@@ -45,6 +45,7 @@ main nav #logo {
   display: flex;
   gap: 1rem;
   align-items: center;
+  cursor: pointer;
 }
 
 main nav #logo i {
@@ -101,11 +102,18 @@ main header #head #btns .btn {
   cursor: pointer;
   background-color: var(--bg-lighter);
 }
+main header #head #btns .btn:hover{
+  background-color: var(--bg-light);
+  border: none;
+}
 
 main header #head #btns #allBtn {
   background-color: #f55b54;
-  border: none;
   color: var(--bg-dark);
+  border: none;
+}
+main header #head #btns #allBtn:hover{
+  background-color:#f36760 ;
 }
 
 main header #contain {
@@ -147,6 +155,21 @@ main header #contain .xtn .xtnInfo .xtnLogo i {
 main header #contain .xtn .xtnInfo .greenish {
   background-color: #c0d9bc;
 }
+main header #contain .xtn .xtnInfo .bluish {
+  background-color: #a8d5e4;
+}
+main header #contain .xtn .xtnInfo .reddish {
+  background-color:#ffcfd3;
+}
+main header #contain .xtn .xtnInfo .pink {
+  background-color:#edc1e9;
+}
+main header #contain .xtn .xtnInfo .violet {
+  background-color:#ceb9f1;
+}
+main header #contain .xtn .xtnInfo .green {
+  background-color:#bafbc1;
+}
 
 main header #contain .xtn .xtnInfo .xtnTxt{
   display: flex;
@@ -183,11 +206,15 @@ main header #contain .xtn .buttons .rmvBtn{
 
 main header #contain .xtn .buttons .onOff{
   font-size: 2.5rem;
+  cursor: pointer;
 }
 
-main header #contain .xtn .buttons .onOff i{
+main header #contain .xtn .buttons .onOff .on{
   color: #f55b54;
-  cursor: pointer;
+}
+
+main header #contain .xtn .buttons .onOff .off{
+  color: rgb(170, 164, 164);
 }
 
 @media screen and (min-width:768px){
